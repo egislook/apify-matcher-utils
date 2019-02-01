@@ -307,7 +307,7 @@ function utils(Apify, requestQueue){
       return;
     }
     
-    !template && debug && console.log({ result });
+    !template && debug
     
     // Add urls to queue
     if(!skipUrls && urls)
@@ -321,7 +321,7 @@ function utils(Apify, requestQueue){
     if(template)
       result = result instanceof Array ? result.map(template) : await template(result);
       
-    template && debug && console.log({ result });
+    template && debug
       
     // Adds result to Apify Store
     
@@ -409,7 +409,7 @@ function utils(Apify, requestQueue){
       
       !isResource // (noRedirects && !isRedirect) 
         ? req.continue() && debug && console.log('[MATCHER] Alowed', req.resourceType(), req.url())
-        : req.abort() && debug && console.log('[MATCHER] Blocked', req.resourceType(), req.url())
+        : req.abort() && debug
     }
     
   }
