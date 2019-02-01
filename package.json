@@ -1,7 +1,7 @@
 {
   "name": "apify-matcher-utils",
-  "version": "0.0.20",
-  "description": "utils functions for apify matcher and apify",
+  "version": "0.0.24",
+  "description": "This version is same the version 0.0.23, but there no log for result and block resource",
   "main": "utils.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
